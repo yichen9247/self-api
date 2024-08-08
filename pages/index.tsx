@@ -11,7 +11,7 @@ export default function Page() {
       </Head>
       <div className="hello-container">
           <h1 className="hello-title">欢迎使用</h1>
-          <p className="hello-desc">使用Next.JS和TypeScript构建的高性能Image API</p>
+          <p className="hello-desc">此Image API基于Vercel Edge Runtime和NextJS进行开发</p>
           <a href="#" title="查看文档" className="hello-button button-doc">查看文档</a>
       </div>
     </div>
