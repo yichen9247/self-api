@@ -12,6 +12,6 @@ export default async function handler(req: { url: string | URL; }) {
         {queryParams.text ? queryParams.text : 'Default Text'}
       </div>
   ),{ width: queryParams.width ? Number(queryParams.width) : 1200,height: queryParams.height ? Number(queryParams.height) : 600,fonts:[
-    queryParams.font === 'HarmonyOS' ? {name: 'HarmonyOS',data: await fetch(new URL('../../assets/HarmonyOS/HarmonyOS.woff', import.meta.url)).then((res) => res.arrayBuffer()),style: 'normal'} : {name: 'Typewr',data: await fetch(new URL('../../assets/DefaultFont.TTF', import.meta.url)).then((res) => res.arrayBuffer()),style: 'normal'}
+    {name: 'Typewr',data: await fetch(new URL('../../assets/DefaultFont.TTF', import.meta.url)).then((res) => res.arrayBuffer()),style: 'normal'}
   ] });
 }
