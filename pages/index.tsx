@@ -5,9 +5,10 @@ export default function Page() {
   return (
     <div>
       <Head>
+        <title>Vercel Image API</title>
+        <link rel="stylesheet" href="assets/style.css" />
         <meta name="og:title" content="Vercel Edge Network" />
         <meta name="og:description" content="Vercel Edge Network" />
-        <link rel="stylesheet" href="assets/style.css" />
       </Head>
       <div className="hello-container">
           <h1 className="hello-title">欢迎使用</h1>
