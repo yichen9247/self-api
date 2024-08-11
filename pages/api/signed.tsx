@@ -3,7 +3,7 @@ import { ImageResponse } from '@vercel/og'
 
 export const config = {runtime: 'edge'};
 
-const simkaiFont = fetch(new URL('https://fonts.xiaokolomi.cn/fonts/simkai.ttf', import.meta.url)).then((res) => res.arrayBuffer());
+const simkaiFont = fetch(new URL('https://fonts.xiaokolomi.cn/fonts/simkai.ttf')).then((res) => res.arrayBuffer());
 
 export default async function handler(req: { url: string | URL; }) {
   const url = new URL(req.url);
