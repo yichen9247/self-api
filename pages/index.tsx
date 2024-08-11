@@ -7,8 +7,8 @@ export default function Page() {
       <Head>
         <title>Vercel Image API</title>
         <link rel="stylesheet" href="assets/style.css" />
-        <meta name="og:title" content="Vercel Edge Network" />
-        <meta name="og:description" content="Vercel Edge Network" />
+        <meta name="title" content="Vercel Edge Network" />
+        <meta name="description" content="Vercel Edge Network" />
       </Head>
       <div className="hello-container">
           <h1 className="hello-title">欢迎使用</h1>
