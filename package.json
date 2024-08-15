@@ -12,7 +12,7 @@
   "dependencies": {
     "@vercel/fetch": "^7.0.0",
     "@vercel/og": "latest",
-    "axios": "^1.7.3",
+    "axios": "^1.7.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
