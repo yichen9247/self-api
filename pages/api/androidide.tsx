@@ -6,10 +6,7 @@ import { ImageResponse } from '@vercel/og'
 export const config = {runtime: 'edge'};
 const HarmonyOSFont = fetch(new URL('https://fonts.xiaokolomi.cn/fonts/HarmonyOS/HarmonyOS.woff')).then((res) => res.arrayBuffer());
 
-export default async function handler(req: { url: string | URL; }) {
-  const url = new URL(req.url);
-  const queryParams = Object.fromEntries(url.searchParams);
-
+export default async function handler() {
   return axios.get('https://api.pro.androidide.cn/config').then(async (data) => {
     if (data.data.code === 200) {
         return new ImageResponse((
