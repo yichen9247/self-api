@@ -19,7 +19,7 @@ export default async function handler() {
 
         return new ImageResponse((
             <div style={{ fontSize: 48,background: 'white',color: '#dd524d',width: '100%',height: '100%',display: 'flex',textAlign: 'center',alignItems: 'center',flexDirection: 'column' }}>
-                <h3>AIDE PRO团队人员</h3>
+                <h3>AIDE PRO团队成员</h3>
                 <div style={{ width: '95%', display: 'flex', alignItems: 'center', justifyContent: 'center',margin: '0 auto', flexWrap: 'wrap' }}>
                     {getElement()}
                 </div>
