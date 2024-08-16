@@ -3,7 +3,7 @@ import axios from 'axios'
 import { ImageResponse } from '@vercel/og'
 
 export const config = {runtime: 'edge'};
-const HarmonyOSFont = fetch(new URL('https://api.pro.androidide.cn/afdianrylb')).then((res) => res.arrayBuffer());
+const HarmonyOSFont = fetch(new URL('https://fonts.xiaokolomi.cn/fonts/HarmonyOS/HarmonyOS.woff')).then((res) => res.arrayBuffer());
 
 export default async function handler() {
     return axios.get('https://api.pro.androidide.cn/afdianrylb').then(async (data) => {
