@@ -24,6 +24,6 @@ export default async function handler() {
                     {getElement()}
                 </div>
             </div>
-        ),{ width: 1200,height: 600 });
+        ),{ width: 1200,height: 600,fonts: [{ name: 'simkaiFont',data: await HarmonyOSFont,style: 'normal'}] });
     });
 }
