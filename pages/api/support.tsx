@@ -25,5 +25,9 @@ export default async function handler() {
                 </div>
             </div>
         ),{ width: 1200,height: 600,fonts: [{ name: 'simkaiFont',data: await HarmonyOSFont,style: 'normal'}] });
-    });
+    }).catch(async () => {
+        return new ImageResponse((
+            <div style={{ fontSize: 128,background: 'white',color: '#dd524d',width: '100%',height: '100%',display: 'flex',textAlign: 'center',alignItems: 'center',justifyContent: 'center' }}>后端连接失败</div>
+        ),{ width: 1200,height: 600,fonts: [{ name: 'simkaiFont',data: await HarmonyOSFont,style: 'normal'}] });
+    });;
 }
