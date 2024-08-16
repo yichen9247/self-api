@@ -11,7 +11,7 @@ export default async function handler() {
         const getElement = () => {
             for (let i = 0; i < data.data.data.list.length; i++) {
                 elements.push(
-                    <img src={data.data.data.list[i].img} style={{ width: 72, height: 72, borderRadius: '50%', margin: '0 10px', marginBottom: '15px' }} />
+                    <img key={i} src={data.data.data.list[i].img} style={{ width: 72, height: 72, borderRadius: '50%', margin: '0 10px', marginBottom: '15px' }} />
                 )
             }
             return elements;
