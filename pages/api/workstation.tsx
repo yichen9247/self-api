@@ -8,9 +8,7 @@ const noticeList = [
         author: '逐梦网站运营',
         avatar: 'https://q2.qlogo.cn/g?b=qq&s=640&nk=2169347942',
         create: '2024-08-23 00:00',
-        content: `
-            <p>欢迎使用逐梦音乐工作站，本网站适用于音乐爱好者学习交流使用，本网站上的媒体资源禁止用于商业用途，一经发现将追究其法律责任，若有侵权的地方，请将相关证明文件发送至邮箱865252486@qq.com，核实后将对侵权的地方进行下架处理。</p>
-        `
+        content: '<p>欢迎使用逐梦音乐工作站，本网站适用于音乐爱好者学习交流使用，本网站上的媒体资源禁止用于商业用途，一经发现将追究其法律责任，若有侵权的地方，请将相关证明文件发送至邮箱865252486@qq.com，核实后将对侵权的地方进行下架处理。</p>'
     }
 ];
 
@@ -33,6 +31,6 @@ export default async function handler(req: { url: string | URL; }) {
     }
 
     return new Response(JSON.stringify(returnResult), {
-        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://ai.music.xiaokolomi.cn/' }
     });
 }
