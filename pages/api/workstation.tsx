@@ -31,6 +31,6 @@ export default async function handler(req: { url: string | URL; }) {
     }
 
     return new Response(JSON.stringify(returnResult), {
-        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://ai.music.xiaokolomi.cn/' }
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'ai.music.xiaokolomi.cn' }
     });
 }
