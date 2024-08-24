@@ -1,7 +1,7 @@
 
 import axios from 'axios';
-import { NextApiRequest, NextApiResponse } from 'next';
 import apiConfig from '../../../scripts/apiConfig';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest,res: NextApiResponse) {
   const { type } = req.query;
