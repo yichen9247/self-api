@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse) 
   const { type } = req.query;
   let resUrl = null, response = null;
 
-  if (!type) return res.status(400).send('Missing image parameter');
+  if (!type) return res.status(400).send('404 NotFound');
 
   if (type === 'image') {
     const { image } = req.query;
