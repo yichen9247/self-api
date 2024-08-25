@@ -7,7 +7,7 @@ const noticeList = [
         cover: 'https://pic.imgdb.cn/item/66ca8f87d9c307b7e954e99e.jpg',
         author: '逐梦网站运营',
         avatar: 'https://q2.qlogo.cn/g?b=qq&s=640&nk=2169347942',
-        create: '2024-08-23 00:00',
+        create: '2024-08-25 08:00',
         content: '<p>本网站上下载的所有音频均需通过音乐制作软件提升音质才能使用，否则无法通过音频音质检测，以下是提升音质的方法之一，前往<a target="_blank" href="https://xstudio.music.163.com/">X-Studio</a>上下载音乐制作软件，下载完成后打开软件，将音频拖进轨道，然后点击页面右上角的导出按钮，比特率选择32Bit，格式选择Wav，采样率选择48.000 Khz，声道选择立体声，导出轨道选择合并，然后再点击确认按钮，至此音频音质提升成功。</p>'
     }, {
         title: '逐梦网站试运营公告',
